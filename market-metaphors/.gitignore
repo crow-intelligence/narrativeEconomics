@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Data files (large, not tracked)
+data/raw/
+data/processed/*.parquet
+
+# Output files (except web dashboard)
+outputs/
+!outputs/web/
+!outputs/web/index.html
+
+# Jupyter
+.ipynb_checkpoints/

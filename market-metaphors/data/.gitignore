@@ -1,0 +1,5 @@
+# Ignore raw data (large files, not tracked in git)
+raw/
+
+# Ignore large processed files
+processed/*.parquet

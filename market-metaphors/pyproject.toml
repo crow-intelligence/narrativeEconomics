@@ -1,0 +1,50 @@
+[project]
+name = "market-metaphors"
+version = "0.1.0"
+description = "Metaphor-driven market narrative analysis: Kindleberger phases × Shiller narrative economics"
+readme = "README.md"
+authors = [
+    { name = "Zoltan Varju", email = "zoltan.varju@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "pandas>=2.0",
+    "pyarrow>=15.0",
+    "yfinance>=0.2",
+    "transformers>=4.40",
+    "torch>=2.2",
+    "accelerate>=0.29",
+    "datasets>=2.18",
+    "scikit-learn>=1.4",
+    "matplotlib>=3.8",
+    "seaborn>=0.13",
+    "jupyter>=1.0",
+    "ipykernel>=6.0",
+    "tqdm>=4.66",
+    "statsmodels>=0.14",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "pre-commit>=3.7",
+    "ruff>=0.4",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.22,<0.10.0"]
+build-backend = "uv_build"
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP"]
+
+[tool.ruff.format]
+quote-style = "double"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = ["slow: marks tests that require model download (deselect with '-m \"not slow\"')"]
