@@ -3,3 +3,5 @@ raw/
 
 # Ignore large processed files
 processed/*.parquet
+/raw
+/processed
