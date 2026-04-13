@@ -1,4 +1,4 @@
 [core]
     remote = gcs
 ['remote "gcs"']
-    url = gs://narrative-economics-data/dvc-storage
+    url = gs://crow-intelligence/narrative-economics-data/dvc-storage
