@@ -22,6 +22,8 @@ dependencies = [
     "ipykernel>=6.0",
     "tqdm>=4.66",
     "statsmodels>=0.14",
+    "trafilatura>=2.0.0",
+    "openpyxl>=3.1.5",
 ]
 
 [dependency-groups]
